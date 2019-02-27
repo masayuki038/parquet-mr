@@ -33,6 +33,6 @@ public class SchemaCommandTest extends ParquetFileTest {
     SchemaCommand command = new SchemaCommand(createLogger());
     command.targets = Arrays.asList(file.getAbsolutePath());
     command.setConf(new Configuration());
-    Assert.assertEquals(1, command.run());
+    Assert.assertEquals(0, command.run());
   }
 }
